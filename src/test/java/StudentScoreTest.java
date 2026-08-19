@@ -23,4 +23,11 @@ public class StudentScoreTest {
 
         assertEquals("Fail", StudentScore.classifyScore(scores));
     }
+
+    @Test
+    void testExcellentWithOneScore() {
+        int[] scores = {8};
+
+        assertEquals("Excellent", StudentScore.classifyScore(scores));
+    }
 }
